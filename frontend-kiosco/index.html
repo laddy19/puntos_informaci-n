@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Punto de Información UMB - Kiosco</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f6f9;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+        }
+        .kiosco-container {
+            width: 80%;
+            max-width: 600px;
+            background: white;
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+            text-align: center;
+        }
+        h1 {
+            color: #8b0000;
+            margin-bottom: 10px;
+        }
+        p {
+            color: #555;
+            font-size: 18px;
+            margin-bottom: 30px;
+        }
+        /* Botones optimizados para pantallas táctiles (mínimo 44x44 píxeles según requerimientos) */
+        .btn-tactil {
+            display: block;
+            width: 100%;
+            padding: 18px;
+            margin: 15px 0;
+            background-color: #8b0000;
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 20px;
+            font-weight: bold;
+            cursor: pointer;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+            transition: background 0.2s;
+        }
+        .btn-tactil:hover {
+            background-color: #a52a2a;
+        }
+        .btn-secundario {
+            background-color: #004080;
+        }
+        .btn-secundario:hover {
+            background-color: #0059b3;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="kiosco-container">
+        <h1>Universidad Manuela Beltrán</h1>
+        <p>Red de Puntos de Información Universitarios</p>
+        
+        <!-- Opciones principales para el usuario táctil -->
+        <button class="btn-tactil" onclick="alert('Abriendo sección de Información General y Cultural...')">Información General (Público)</button>
+        <button class="btn-tactil" onclick="alert('Abriendo consulta administrativa y normativas...')">Consulta Administrativa</button>
+        <button class="btn-tactil btn-secundario" onclick="alert('Redirigindo al módulo de Autenticación de Roles...')">Ingresar a Mi Espacio (Login)</button>
+    </div>
+
+</body>
+</html>
